@@ -36,3 +36,7 @@ BlockChaineはこのhashによる鎖を連ねることで、鎖が維持でき�
   <img width="750px" src="https://user-images.githubusercontent.com/4949982/37757619-fea62460-2df0-11e8-947a-f659c58d765f.png">
 </div>
 <div align="center"> 図4. 異常系（なんらかの編集があった場合）　</div>
+
+単純なこの仕組に加えて、様々にP2Pで動作を確認と保証する仕組みをいれてBlockChaineというらしいです（広義すぎるので分散台帳技術はちょっと和訳として不適切だと思う）   
+
+
