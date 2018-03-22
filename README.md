@@ -152,6 +152,21 @@ Ground Zeroとは、今回、作成したblockchaineの最初の値になるシ�
 
 またブロックチェーンの偽装が難しい問題で、戸籍などをブロックチェーン化してしまうのもあるようです[4]。  
 
+## 作成したコード
+[https://github.com/GINK03/python-block-chaine] 
+
+**offline.py**  
+単一マシンで、文章のブロックチェーンを構築します。  
+ハードコードされたsizeで計算の難易度を指定できます  
+```console
+$ python3 offline.py
+```
+
+**phyllis.py**  
+ブロックチェーンのハッシュ値から過去のブロックを辿って、ルートまで逆引きするプログラムです  
+```console
+$ python3 phyllis.py
+```
 
 ## 参考文献
 - [1] [Twitter](https://twitter.com/komiya_atsushi/status/971657543717068800)
