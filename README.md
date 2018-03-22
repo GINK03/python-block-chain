@@ -57,7 +57,18 @@ P2Pでは同時に生成してしまう可能性がありますが、同時に�
 この資料によると、費用対効果の視点でコストが嵩みすぎるという課題が挙げられていますが、それは、nonceによる採掘難易度に依存するし、衝突困難性は採掘と関係がないので、私はできると考えています。
 
 ## nonce値の難易度による夏目漱石の「坊っちゃん」を全部ブロックチェーン化するまでの計算時間
-
+**CPU**  
+```console
+CPU MHz:                1550.000
+CPU max MHz:            3800.0000
+CPU min MHz:            1550.0000AMD
+BogoMIPS:               7585.48en 5 1500X Quad-Core Processor
+```
+**uname**
+```console
+$ uname -a
+Linux PrintzEugen 4.13.0-32-generic #35-Ubuntu SMP Thu Jan 25 09:13:46 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+```
 
 
 ## 参考文献
