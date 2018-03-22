@@ -58,6 +58,41 @@ P2Pでは同時に生成してしまう可能性がありますが、同時に�
 
 また、直接、データをブロックチェーンに入れるのではなく、公文書のハッシュ値やフィンガープリントに該当するものをいれればいいはずだと思うのですが。
 
+## 夏目漱石の小説をブロックチェーンに組み込む  
+このような簡単なコードを作成しました。  
+前のhashの情報を記憶しつつ、データを持ち、nonceの条件を満たすものを探し、一致したら、ブロックをjsonで吐き出すものです。  
+```console
+def _gen_block(arg):
+  source_host, data, prev_hash = arg
+
+  now = time.time()
+  loc = datetime.fromtimestamp(now)
+  timestamp = loc.timestamp()
+ 
+  while True:
+    nonce = random.randint(0, 100000000000000) 
+    block = { \
+      'timestamp':timestamp, \
+      'source_host':source_host, \
+      'data':data, \
+      'prev_hash': prev_hash,  \
+      'nonce':nonce,
+    }
+    next_hash = hashlib.sha256(bytes(json.dumps(block),'utf8')).hexdigest()
+
+    # 先頭のN字が"0"ならば、採用
+    size = 1
+    if next_hash[:size] == '0'*size:
+      break
+  open(f'cache/{next_hash}', 'w').write( json.dumps(block, indent=2, ensure_ascii=False) ) 
+  return block, next_hash
+
+start_block, next_hash = _gen_block(('http://localhost:1200', 'Ground Zero', hashlib.sha256(bytes('0', 'utf8')).hexdigest()))
+for line in open('stash/kokoro.txt'):
+  line = line.strip()
+  block, next_hash = _gen_block(('http://localhost:1200', line, next_hash) )
+```
+
 ## nonce値の難易度による夏目漱石の「坊っちゃん」を全部ブロックチェーン化するまでの計算時間
 **CPU**  
 ```console
