@@ -25,6 +25,12 @@ hashによる分散化はあらゆるところで行われており、エンジ�
 </div>
 <div align="center"> 図2. UbutuのISOサイトでは、md5というハッシュアルゴリズムの値を載せて改竄がないかユーザがチェックできる </div>
 
+<div align="center">
+  <img width="550px" src="https://user-images.githubusercontent.com/4949982/37757879-b8567c02-2df1-11e8-9924-46cc7bfdfcb9.png">
+</div>
+<div align="center"> 図3. 国会で説明された様子[1] </div>
+
+
 ## BlockChaineまで発展する
 BlockChaineはこのhashによる鎖を連ねることで、鎖が維持できるているかどうかで、データが正しいかどうかの検証が行えます。  
 <div align="center">
@@ -39,4 +45,6 @@ BlockChaineはこのhashによる鎖を連ねることで、鎖が維持でき�
 
 単純なこの仕組に加えて、様々にP2Pで動作を確認と保証する仕組みをいれてBlockChaineというらしいです（広義すぎるので分散台帳技術はちょっと和訳として不適切だと思う）   
 
+## 参考文献
+- [1] [Twitter](https://twitter.com/komiya_atsushi/status/971657543717068800)
 
