@@ -72,7 +72,12 @@ $ uname -a
 Linux PrintzEugen 4.13.0-32-generic #35-Ubuntu SMP Thu Jan 25 09:13:46 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
-インセンティブが働かない環境では、nonce値はないか、小さい値でいいのではないかと考えいています。  
+<div align="center">
+  <img width="400px" src="https://user-images.githubusercontent.com/4949982/37760041-de1fccde-2df8-11e8-8384-171e464e81b3.png">
+</div>
+<div align="center"> 図5. 計算の難易度ごとの必要計算時間</div>
+
+インセンティブが働かない公文書管理などの環境では、nonce値はないか、小さい値でいいのではないかと考えいています。  
 
 
 
