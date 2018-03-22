@@ -72,6 +72,9 @@ $ uname -a
 Linux PrintzEugen 4.13.0-32-generic #35-Ubuntu SMP Thu Jan 25 09:13:46 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
 ```
 
+インセンティブが働かない環境では、nonce値はないか、小さい値でいいのではないかと考えいています。  
+
+
 
 ## 参考文献
 - [1] [Twitter](https://twitter.com/komiya_atsushi/status/971657543717068800)
