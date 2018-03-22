@@ -23,14 +23,21 @@ def _gen_block(arg):
   loc = datetime.fromtimestamp(now)
   timestamp = loc.timestamp()
   print(timestamp)
-  
-  block = { \
-    'timestamp':timestamp, \
-    'source_host':source_host, \
-    'data':data, \
-    'prev_hash': prev_hash \
-  }
-  next_hash = hashlib.sha256(bytes(json.dumps(block),'utf8')).hexdigest()
+ 
+  while True:
+    nonce = random.randint(0, 100000000000000) 
+    block = { \
+      'timestamp':timestamp, \
+      'source_host':source_host, \
+      'data':data, \
+      'prev_hash': prev_hash,  \
+      'nonce':nonce,
+    }
+    next_hash = hashlib.sha256(bytes(json.dumps(block),'utf8')).hexdigest()
+
+    # 先頭の4字が"0000"ならば、採用
+    if next_hash[:4] == '0000':
+      break
   open(f'cache/{next_hash}', 'w').write( json.dumps(block, indent=2, ensure_ascii=False) ) 
   print(next_hash)
   print(block)
