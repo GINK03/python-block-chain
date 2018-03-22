@@ -61,7 +61,7 @@ P2Pでは同時に生成してしまう可能性がありますが、同時に�
 ## 夏目漱石の小説をブロックチェーンに組み込む  
 このような簡単なコードを作成しました。  
 前のhashの情報を記憶しつつ、データを持ち、nonceの条件を満たすものを探し、一致したら、ブロックをjsonで吐き出すものです。  
-```console
+```python
 def _gen_block(arg):
   source_host, data, prev_hash = arg
 
