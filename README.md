@@ -27,4 +27,12 @@ hashによる分散化はあらゆるところで行われており、エンジ�
 
 ## BlockChaineまで発展する
 BlockChaineはこのhashによる鎖を連ねることで、鎖が維持できるているかどうかで、データが正しいかどうかの検証が行えます。  
+<div align="center">
+  <img width="750px" src="https://user-images.githubusercontent.com/4949982/37757573-da223408-2df0-11e8-996b-6ace35eac6bb.png">
+</div>
+<div align="center"> 図3. 正常系（不正がない場合）　</div>
 
+<div align="center">
+  <img width="750px" src="https://user-images.githubusercontent.com/4949982/37757619-fea62460-2df0-11e8-947a-f659c58d765f.png">
+</div>
+<div align="center"> 図4. 異常系（なんらかの編集があった場合）　</div>
