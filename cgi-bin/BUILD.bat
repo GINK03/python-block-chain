@@ -11,7 +11,7 @@ GOTO :EOF
 
 :A
 python offline.py
-xcopy cache ..\cache /S /I
+xcopy cache ..\cache /S /I /Q
 GOTO :EOF
 
 :B
