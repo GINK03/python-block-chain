@@ -10,6 +10,7 @@ echo BUILD [/d] is DestroyMode
 GOTO :EOF
 
 :A
+IF NOT EXIST cache mkdir cache
 python offline.py
 xcopy cache ..\cache /S /I /Q
 GOTO :EOF
