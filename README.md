@@ -15,3 +15,9 @@ phyllis.pyの13行目の cor の値に BUILD /b を実行した時に出力さ�
 cd ..
 
 THE_KUMO_TO_WAY.bat
+
+ブロックチェーンを再構築する場合は
+
+cd cgi-bin
+
+BUILD /d を実行し cache フォルダを削除してください。
