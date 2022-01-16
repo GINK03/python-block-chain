@@ -21,3 +21,7 @@ THE_KUMO_TO_WAY.bat
 cd cgi-bin
 
 BUILD /d を実行し cache フォルダを削除してください。
+
+KUMOから発行されたシリアルナンバーか以下のURLからダウンロードできます。
+
+#####https://kumo.site/Document/ASC/SerialNumberList.txt.asc#####
