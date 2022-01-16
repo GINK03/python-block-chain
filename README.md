@@ -24,4 +24,4 @@ BUILD /d を実行し cache フォルダを削除してください。
 
 KUMOから発行されたシリアルナンバーか以下のURLからダウンロードできます。
 
-#####https://kumo.site/Document/ASC/SerialNumberList.txt.asc#####
+##### https://kumo.site/Document/ASC/SerialNumberList.txt.asc #####
