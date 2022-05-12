@@ -43,8 +43,8 @@ def _gen_block(arg):
   print(block)
   return block, next_hash
 
-start_block, next_hash = _gen_block(('http://localhost:1200', 'Ground Zero', hashlib.sha256(bytes('0', 'utf8')).hexdigest()))
-for line in open('stash/kokoro.txt'):
+start_block, next_hash = _gen_block(('http://localhost:1200', 'S/N 0000', hashlib.sha256(bytes('0', 'utf8')).hexdigest()))
+for line in open('../QR_IN_WWW.html', encoding='utf-8'):
   line = line.strip()
   block, next_hash = _gen_block(('http://localhost:1200', line, next_hash) )
 
